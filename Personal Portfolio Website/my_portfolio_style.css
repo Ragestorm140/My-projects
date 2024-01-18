@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-color: black;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+}
+footer{
+    position: sticky;
+    top: 100%;
+    min-height: 0.1rem;
+    margin-bottom: 0.2rem;
+    font-style: italic;
+    font-size: 0.8rem;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4rem;
+    background-color: rgb(41, 41, 42);
+}
+#logo{
+    margin-top: 5.8rem;
+    height: 10rem;
+    width: 10rem;
+}
+#logo img{
+    max-width: 40%;
+    max-height: 40%;
+}
+#name img{
+    min-width: 40vw;
+    min-height: 40vh;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 2rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #aa6be4;;
+}
+nav ul li a:hover{
+    font-size: 1.02rem;
+    color:rgb(153, 153,226);
+}
+.left{
+    grid-template-columns: repeat(2, auto);
+    display: flex;
+    margin-right: 20rem;
+    margin-left: 2rem;
+}
+.title{
+    margin-top: 6.8rem;
+    font-size: 1.5rem;
+}
+.firstSection{
+    display: flex;
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+    justify-content: space-around;
+    align-items: center;
+}
+.firstSection > div{
+    width: 30%;
+}
+.leftSection{
+    font-style:italic ;
+    font-size: 2.5rem;
+}
+.rightSection img{
+    width: 80%;
+    margin: 1rem 0;
+}
+.purple{
+    color: rgb(170, 107, 228);
+}
+#element{
+    color: rgb(170, 107, 228);
+}
+.button .btn1{
+    background-color: rgb(76, 2, 85);
+    border-color: white;
+    padding: 1rem;
+    color: white;
+    font-size: 1.06rem;
+    cursor: pointer;
+}
+.button .btn2{
+    background-color: #aa6be4;
+    border-color: black;
+    padding: 1rem;
+    font-size: 1.06rem;
+    cursor: pointer;
+}
+.button .btn2 a{
+    color: white;
+    text-decoration: none;
+}
