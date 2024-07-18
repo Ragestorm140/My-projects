@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Summary</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='summary_styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Expense Summary</h2>
+        <div class="summary-info">
+            <p>Total Spending: ₹{{ total_spent }}</p>
+            <div class="category-wise">
+                <h3>Expense by Category:</h3>
+                <ul>
+                    {% for category, amount in amount_by_category.items() %}
+                        <li>{{ category }}: ₹{{ amount }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <p>Remaining Budget: ₹{{ remaining_budget }}</p>
+            <p>Average Daily Spending: ₹{{ avg_daily_budget }}</p>
+            <p>Daily Limit: ₹{{ daily_limit }}</p>
+        </div>
+        <a href="{{ url_for('add_expense') }}" class="btn">Add Expense</a>
+    </div>
+</body>
+</html>
